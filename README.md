@@ -8,5 +8,5 @@ Sobre o site: o nome do site é byteshop, vende produtos de tecnologias, tem 3 c
 
 # Casos de Uso 
 
-
+![Diagrama](./docs/diagrama-de-casos-de-uso.png)
 
