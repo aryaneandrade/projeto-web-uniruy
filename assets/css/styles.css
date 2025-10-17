@@ -1,0 +1,234 @@
+/* ESTILOS GERAIS */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #252525;
+    color: #fff;
+}
+
+/* ESTILOS DE CORES DE TEXTO E BACKGROUND */
+
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.secondary-bg-color {
+    background-color: #c09578;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.primary-color {
+    background-color: #c09578;
+}
+
+.secondary-color {
+    background-color: #626262;
+}
+
+.light-color {
+    background-color: #FCF5EB;
+}
+
+/* NAVBAR */
+
+#navbar .navbar-nav {
+    flex-direction: row;
+}
+
+#navbar .navbar-nav li {
+    margin-left: 1rem;
+}
+
+#navbar a,
+#navbar button {
+    color: #fff;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar i {
+    font-size: 20px;
+}
+
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+#cart-item span {
+    left: 20px;
+}
+
+/* LOGO MARCA */
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* Adaptando a logo */
+@media(min-width:768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+.navbar-items {
+    justify-content: space-between;
+}
+
+/* ADAPTANDO OS ITENS */
+@media(min-width:768px) {
+    .navbar-items {
+        min-width: 80%;
+        display: flex;
+    }
+}
+
+#search-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+@media(min-width:768px) {
+    #search-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* BOTTOM NAVBAR */
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+
+}
+
+#bottom-navbar-container a {
+    font-weight: 600;
+}
+
+
+/* ANIMAÇÃO BLACK FRIDAY*/
+.animacao {
+    display: inline-block;
+    white-space: nowrap;
+    animation: animacao 10s linear infinite;
+    color: #101010;
+}
+
+.animacao h1 {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.overflow-hidden {
+    background-color: #E5C201;
+    height: 40px;
+}
+
+@keyframes animacao {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* CATEGORIAS */
+#categorias {
+  background-color: #626262;
+  text-align: center;
+  padding: 4em 0;
+  color: #fff;
+}
+
+#categorias .col-12 {
+  height: auto; /* altura automática para ajustar ao conteúdo */
+  padding: 2em 1.5em;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#categorias .col-12:hover {
+  transform: scale(1.03);
+}
+
+#categorias h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#categorias img {
+  height: 220px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+
+#categorias a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: block; /* garante que o link envolva título + imagem */
+  transition: color 0.3s ease;
+}
+
+/* Hovers específicos */
+#categoria-1 a:hover,
+#categoria-3 a:hover {
+  color: #c09578;
+}
+
+#categoria-2 a:hover {
+  color: #101010;
+}
+
+#categoria-3 h2 {
+  color: #626262;
+}
+
+@media (min-width: 768px) {
+  #categorias .col-12 {
+    max-width: 30%;
+  }
+}
+
+/* FORM DE LOGIN E CADASTRO */
+#form-container {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: .5px 10px 15px rgba(78, 76, 76, 0.2);
+    margin: 25px auto;
+    padding: 25px;
+    color: #000;
+}
+
+@media(min-width: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
