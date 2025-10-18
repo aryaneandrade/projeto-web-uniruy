@@ -131,8 +131,11 @@ body {
 .animacao {
     display: inline-block;
     white-space: nowrap;
-    animation: animacao 10s linear infinite;
+    right: 0;
+    left: 0;
+    animation: animacao 8s linear infinite;
     color: #101010;
+    position: absolute;
 }
 
 .animacao h1 {
