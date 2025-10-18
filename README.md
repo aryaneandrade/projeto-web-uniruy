@@ -1,12 +1,39 @@
-# Site de E-commerce (Edição Black Friday)
-Projeto da Disciplina de Desenvolvimento WEB, tendo como requisitos a utilização das linguagens HTML, CSS, JS, PHP, banco MySQL e integração com o Google Looker para criação do dashboard, além de duas APIs.
+# 🛍️ Site de E-commerce — **Edição Black Friday**
 
-O objetivo é integrar todo o conhecimento desenvolvimdo durante as aulas e tambem ter uma experiencia completa da integração das partes de um site em producao.
+Este projeto foi desenvolvido como parte da disciplina **Desenvolvimento Web**, com o objetivo de aplicar e integrar os principais conceitos estudados ao longo do curso.
 
-Sobre o site: o nome do site é byteshop, vende produtos de tecnologias, tem 3 categorias: computadores, celulares e video game.  
+## 🎯 Objetivo
 
+O propósito do projeto é consolidar o conhecimento adquirido em **HTML**, **CSS**, **JavaScript**, **PHP** e **MySQL**, promovendo uma experiência completa de integração entre o front-end, o back-end, o banco de dados e a camada de análise de dados.
+Além disso, o projeto inclui:
 
-# Casos de Uso 
+* Integração com o **Google Looker Studio** para criação de dashboards analíticos;
+* Consumo de **duas APIs externas** para enriquecer a aplicação com dados dinâmicos.
 
-![Diagrama](./docs/diagrama-de-casos-de-uso.png)
+## 🖥️ Sobre o Site
+
+O site, denominado **ByteShop**, é uma loja virtual especializada em produtos de tecnologia.
+As categorias principais são:
+
+* 💻 **Computadores**
+* 📱 **Celulares**
+* 🎮 **Video Games**
+
+Durante o período da **Black Friday**, o site apresenta promoções exclusivas, destacando produtos e ofertas em destaque na página inicial.
+
+## ⚙️ Tecnologias Utilizadas
+
+| Camada         | Tecnologias             |
+| :------------- | :---------------------- |
+| Front-end      | HTML5, CSS3, JavaScript |
+| Back-end       | PHP                     |
+| Banco de Dados | MySQL                   |
+| Dashboard      | Google Looker Studio    |
+| Integrações    | 2 APIs externas         |
+
+## 📊 Diagrama de Casos de Uso
+
+Abaixo está o diagrama de casos de uso que representa as principais interações do sistema:
+
+![Diagrama de Casos de Uso](./docs/diagrama-de-casos-de-uso.png)
 
