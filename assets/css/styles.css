@@ -20,7 +20,7 @@ body {
 }
 
 .light-bg-color {
-    background-color: #FCF5EB;
+    background-color: #d3d3d3;
 }
 
 .dark-bg-color {
@@ -200,8 +200,7 @@ body {
 }
 
 /* Hovers específicos */
-#categoria-1 a:hover,
-#categoria-3 a:hover {
+#categoria-1 a:hover {
   color: #c09578;
 }
 
@@ -209,7 +208,7 @@ body {
   color: #101010;
 }
 
-#categoria-3 h2 {
+#categoria-3 a:hover {
   color: #626262;
 }
 
