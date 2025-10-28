@@ -13,16 +13,15 @@ if ($_POST['password'] !== $_POST['confirmpassword']) {
 
 //Coletar dados do formulário
 $nome = $_POST['name'];
-$sobrenome = $_POST['lastname'];
 $email = $_POST['email'];
                  // NUNCA armazene senhas em texto puro! Use password_hash.
 $senhaHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 //executar a inserção no banco de dados
 try {
-    $sql = "INSERT INTO usuarios (nome, sobrenome, email, senha) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?, ?)";
     $stmt= $pdo->prepare($sql);
-    $stmt->execute([$nome, $sobrenome, $email, $senhaHash]);
+    $stmt->execute([$nome, $email, $senhaHash]);
 
     //Redirecionar para a página de login - uma mensagem de sucesso
     header("Location: ../login.php?status=sucesso"); // Tem que apontar o caminho aqui
