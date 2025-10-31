@@ -41,7 +41,6 @@ projeto-web-uniruy/
 ├── assets/       # Arquivos estáticos
 │   ├── css/      # Arquivos de estilo
 │   ├── js/       # Scripts JavaScript
-│   ├── html/     # Templates parciais ou fragments HTML
 │   └── img/      # Imagens do site
 │
 ├── controller/   # Controladores
