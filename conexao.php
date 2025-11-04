@@ -4,7 +4,7 @@
 $host = 'localhost';
 $db   = 'black_friday';
 $user = 'root';
-$pass = 'Admin@123';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
