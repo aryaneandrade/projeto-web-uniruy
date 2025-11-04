@@ -6,7 +6,7 @@ require_once 'conexao.php';
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['password'])) {
     die("Erro: Por favor, preencha todos os campos obrigatórios.");
 }
-
+//validar se as senhas coincidem
 if ($_POST['password'] !== $_POST['confirmpassword']) {
     die("Erro: As senhas não coincidem.");
 }
