@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
     <!-- CSS Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 
 <body>
     <!-- NAVBAR-->
@@ -34,13 +41,24 @@
         </div>
     </nav>
 
-
-
     <div class="container col-11 col-md-9" id="form-container">
-        <div class="row align-items-center gx-5">
-            <div class="col-md-12 order-md-1">
-                <h2>Faça o login para continuar</h2>
-                <form>
+        <div class="row gx-5">
+            <div class="col-md-12">
+                <h2>Realize o Seu Cadastro</h2>
+                
+                <form action="php/router.php" method="POST">
+
+                    <input type="hidden" name="acao" value="cadastro">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
+                        <label for="name" class="form-label">Digite seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lastname" name="lastname"
+                            placeholder="Digite seu Sobrenome">
+                        <label for="lastname" class="form-label">Digite seu Sobrenome</label>
+                    </div>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
                         <label for="email" class="form-label">Digite seu email</label>
@@ -50,16 +68,23 @@
                             placeholder="Digite sua senha">
                         <label for="password" class="form-label">Digite sua senha</label>
                     </div>
-                    <input type="submit" class="btn btn-secondary" value="Entrar">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmpassword" name="confirmpassword"
+                            placeholder="Confirme sua senha">
+                        <label for="confirmpassword" class="form-label">Confirmee sua senha</label>
+                    </div>
+                    <input type="submit" class="btn btn-secondary" value="Cadastrar">
+                
                 </form>
-            </div>
+                </div>
             <div class="col-md-12 order-md-2">
                 <div class="col-12" id="link-container">
-                    <a href="cadastro.html">Ainda não tenho cadastro</a>
+                    <a href="login.php">Já tenho uma conta</a> 
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -37,7 +38,7 @@
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">
+                        <a href="login.php" class="nav-link">
                             <i class="bi bi-person"></i> Login
                         </a>
                     </li>
