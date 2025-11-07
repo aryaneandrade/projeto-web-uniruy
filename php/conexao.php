@@ -3,7 +3,7 @@
 $host = 'localhost'; // host do seu BD
 $db   = 'black_friday'; // o nome do seu bd
 $user = 'root'; // seu usuário
-$pass = ''; // sua senha
+$pass = 'Admin@123'; // sua senha
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

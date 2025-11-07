@@ -1,156 +1,98 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+include_once("templates/header.php");
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteShop</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- CSS do Projeto-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Bootstrap  JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
-        defer></script>
-</head>
-
-<body>
-    <!--NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">ByteShop</a>
-            <div class="navbar-items">
-                <div></div>
-                <form class="d-flex" role="search" id="search-form">
-                    <input class="form-control me-2" type="search" placeholder="Busque o seu produto..."
-                        aria-label="Search" />
-                    <button class="btn btn-secondary" type="submit">Pesquisar</button>
-                </form>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="login.php" class="nav-link">
-                            <i class="bi bi-person"></i> Login
-                        </a>
-                    </li>
-                    <li class="nav-item" id="cart-item">
-                        <a href="carrinho.html" class="nav-link">
-                            <i class="bi bi-cart"></i>
-                            <b id="preco">R$ 3600,00</b>
-                        </a>
-                        <span class="qty-info"> 8 </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--BOTTOM NAVBAR -->
-    <nav class="navbar navbar-expand-lg light-bg-color" id="bottom-navbar-container">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#categorias">Categorias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalogo.html">Produtos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </div>
-
-    <!--ANIMAÇÃO BLACK FRIDAY -->
-    <div class="overflow-hidden text-white py-2" id="animacao-bg">
-        <div class="animacao">
-            <h1 class="m-0">BLACK FRIDAY NO AR — OFERTAS IMPERDÍVEIS NA BYTE SHOP!</h1>
+<!--BOTTOM NAVBAR -->
+<nav class="navbar navbar-expand-lg light-bg-color" id="bottom-navbar-container">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.php">Produtos</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+</div>
 
-    <!-- BANNERS-->
-    <div class="container" id="banners-container">
-        <div class="carousel slide" id="slider" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/banner-monitor.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
-                    <div class="carousel-caption primary-bg-color ">
-                        <h5>Monitores de Alta Performance</h5>
-                        <p>Experiência visual imersiva para trabalho e games com tecnologia de ponta</p>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="assets/img/banner-ps5.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
-                    <div class="carousel-caption primary-bg-color">
-                        <h5>PlayStation 5: Nova Geração</h5>
-                        <p>Gráficos impressionantes, velocidade extrema e jogabilidade sem limites</p>
-                    </div>
+<!--ANIMAÇÃO BLACK FRIDAY -->
+<div class="overflow-hidden text-white py-2" id="animacao-bg">
+    <div class="animacao">
+        <h1 class="m-0">BLACK FRIDAY NO AR — OFERTAS IMPERDÍVEIS NA BYTE SHOP!</h1>
+    </div>
+</div>
+
+<!-- BANNERS-->
+<div class="container" id="banners-container">
+    <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/banner-monitor.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+                <div class="carousel-caption primary-bg-color ">
+                    <h5>Monitores de Alta Performance</h5>
+                    <p>Experiência visual imersiva para trabalho e games com tecnologia de ponta</p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden" aria-hidden="true"> Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden" aria-hidden="true"> Previous</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- CATEGORIAS -->
-    <div class="container-fluid" id="categorias">
-        <h2>CATEGORIAS</h2>
-
-        <div class="container">
-            <div class="row justify-content-around">
-
-                <div class="col-12 dark-bg-color" id="categoria-1">
-                    <a href="catalogo.html">
-                        <h2>Monitores</h2>
-                        <img src="assets/img/categoria-monitor.png" alt="Monitor">
-                    </a>
-                </div>
-
-                <div class="col-12 secondary-bg-color" id="categoria-2">
-                    <a href="catalogo.html">
-                        <h2>Celulares</h2>
-                        <img src="assets/img/categoria-celular.png" alt="Celular">
-                    </a>
-                </div>
-
-                <div class="col-12 light-bg-color" id="categoria-3">
-                    <a href="catalogo.html">
-                        <h2>Video Games</h2>
-                        <img src="assets/img/categoria-videogame.png" alt="Video Game">
-                    </a>
+            <div class="carousel-item ">
+                <img src="assets/img/banner-ps5.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+                <div class="carousel-caption primary-bg-color">
+                    <h5>PlayStation 5: Nova Geração</h5>
+                    <p>Gráficos impressionantes, velocidade extrema e jogabilidade sem limites</p>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" aria-hidden="true"> Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" aria-hidden="true"> Previous</span>
+        </button>
     </div>
+</div>
 
-    <!--FOOOTER-->
-    <footer class="bg-dark text-center text-white">
-        <div class="text-center p-3 dark-bg-color">
-            © 2025 - Desenvolvido por Adam, Aryane, João Vitor, Vitor e Rodrigo.
+<!-- CATEGORIAS -->
+<div class="container-fluid" id="categorias">
+    <h2>CATEGORIAS</h2>
+
+    <div class="container">
+        <div class="row justify-content-around">
+
+            <div class="col-12 dark-bg-color" id="categoria-1">
+                <a href="catalogo.php">
+                    <h2>Monitores</h2>
+                    <img src="assets/img/categoria-monitor.png" alt="Monitor">
+                </a>
+            </div>
+
+            <div class="col-12 secondary-bg-color" id="categoria-2">
+                <a href="catalogo.php">
+                    <h2>Celulares</h2>
+                    <img src="assets/img/categoria-celular.png" alt="Celular">
+                </a>
+            </div>
+
+            <div class="col-12 light-bg-color" id="categoria-3">
+                <a href="catalogo.php">
+                    <h2>Video Games</h2>
+                    <img src="assets/img/categoria-videogame.png" alt="Video Game">
+                </a>
+            </div>
         </div>
-    </footer>
-
-</body>
-</html>
+    </div>
+</div>
+<?php
+include_once("templates/footer.php");
+?>
