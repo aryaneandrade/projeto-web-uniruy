@@ -99,20 +99,3 @@ INSERT INTO precos (id_produto, preco_normal, preco_black_friday, data_inicio_pr
 		pr.data_inicio_promocao <= CURDATE()
 	AND 
 		pr.data_fim_promocao >= CURDATE();
-
--- Tabela mínima de endereços compatível com `endereco.php`
--- Campos usados na página: cep, rua/logradouro, numero, telefone, bairro, cidade, estado
-CREATE TABLE IF NOT EXISTS enderecos (
-    id_endereco INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    cep VARCHAR(20) NOT NULL,
-    logradouro VARCHAR(255) NOT NULL,
-    numero VARCHAR(20) NOT NULL,
-    telefone VARCHAR(30),
-    bairro VARCHAR(150),
-    cidade VARCHAR(150) NOT NULL,
-    estado VARCHAR(50) NOT NULL,
-    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE
-);
-
