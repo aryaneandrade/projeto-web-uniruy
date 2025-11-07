@@ -77,7 +77,7 @@ projeto-web-uniruy/
 
 O diagrama abaixo representa as principais interações do sistema:
 
-![Diagrama de Casos de Uso](./docs/diagrama-de-casos-de-uso.png)
+![Diagrama de Casos de Uso](./docs/diagramas/Diagrama de caso de uso.png)
 
 ---
 
