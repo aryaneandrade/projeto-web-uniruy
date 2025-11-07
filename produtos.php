@@ -78,5 +78,4 @@ include_once("templates/header.php");
     </div>
 
     </body>
-
     </html>

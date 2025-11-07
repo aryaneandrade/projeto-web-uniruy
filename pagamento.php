@@ -19,8 +19,5 @@ include_once("templates/header.php");
             <button type="submit" class="btn btn-success mt-4">Finalizar Compra</button>
         </form>
     </div>
-
-
 </body>
-
 </html>

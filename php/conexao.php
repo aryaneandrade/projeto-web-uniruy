@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost'; // host do seu BD
-$db   = 'black_friday'; // o nome do seu bd
-$user = 'root'; // seu usuário
-$pass = 'Admin@123'; // sua senha
+$host = 'localhost'; 
+$db   = 'black_friday'; 
+$user = 'root'; 
+$pass = 'Admin@123';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
