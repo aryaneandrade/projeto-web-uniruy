@@ -80,7 +80,15 @@ O diagrama abaixo representa as principais interações do sistema:
 ![Diagrama de Casos de Uso](./docs/diagramas/diagrama-caso-de-uso.png)
 
 ---
+## 📊 Diagrama de Classes
 
+
+
+---
+## 📊 Diagrama de ER
+
+
+---
 ## 🚀 Funcionalidades Principais
 
 - Cadastro e login de usuários
