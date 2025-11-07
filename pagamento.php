@@ -4,10 +4,10 @@ include_once("templates/header.php");
 
 <body>
     <div class="container" id="form-container">
-        <h2>Finalize o seu Pedido</h2>
+        <h2>Pagamento</h2>
         <form>
             <div class="row">
-                <p>Informe os dados de Pagamento</p>
+                <p>Informe os dados de pagamento</p>
                 <div class="form-group col-md-6">
                     <label for="pagamento">Tipo de Pagamento</label>
                     <select id="pagamento" class="form-control">
