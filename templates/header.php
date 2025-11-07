@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+session_start(); 
+// Debug temporário
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -38,9 +43,15 @@
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="login.php" class="nav-link">
-                            <i class="bi bi-person"></i> Login
+                        <?php if(isset($_SESSION['user_name'])): ?>
+                            <a href="login.php" class="nav-link">
+                        <i class="bi bi-person"></i> <?php echo $_SESSION['user_name']; ?>
                         </a>
+                        <?php else: ?>
+                        <a href="login.php" class="nav-link">
+                            <i class="bi bi-person"></i> Login 
+                        </a>
+                        <?php endif; ?>
                     </li>
                     <li class="nav-item" id="cart-item">
                         <a href="carrinho.php" class="nav-link">

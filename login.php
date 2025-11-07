@@ -8,7 +8,8 @@ include_once("templates/header.php");
             <h2>Faça o login para continuar</h2>
 
             <form action="php/router.php" method="POST">
-
+                <input type="hidden" name="acao" value="login">
+                
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
                     <label for="email" class="form-label">Digite seu email</label>

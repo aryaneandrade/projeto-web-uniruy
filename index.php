@@ -18,7 +18,7 @@
                     <a class="nav-link" href="#categorias">Categorias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="catalogo.php">Produtos</a>
+                    <a class="nav-link" href="produtos.php">Produtos</a>
                 </li>
             </ul>
         </div>
@@ -71,21 +71,21 @@
         <div class="row justify-content-around">
 
             <div class="col-12 dark-bg-color" id="categoria-1">
-                <a href="catalogo.php">
+                <a href="produtos.php">
                     <h2>Monitores</h2>
                     <img src="assets/img/categoria-monitor.png" alt="Monitor">
                 </a>
             </div>
 
             <div class="col-12 secondary-bg-color" id="categoria-2">
-                <a href="catalogo.php">
+                <a href="produtos.php">
                     <h2>Celulares</h2>
                     <img src="assets/img/categoria-celular.png" alt="Celular">
                 </a>
             </div>
 
             <div class="col-12 light-bg-color" id="categoria-3">
-                <a href="catalogo.php">
+                <a href="produtos.php">
                     <h2>Video Games</h2>
                     <img src="assets/img/categoria-videogame.png" alt="Video Game">
                 </a>

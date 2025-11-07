@@ -116,12 +116,10 @@ body {
 }
 
 /* BOTTOM NAVBAR */
-
 #bottom-navbar-container .container {
     justify-content: flex-end;
 
 }
-
 #bottom-navbar-container a {
     font-weight: 600;
 }
@@ -157,6 +155,7 @@ body {
         transform: translateX(-100%);
     }
 }
+
 /* CATEGORIAS */
 #categorias {
   background-color: #626262;
@@ -219,9 +218,10 @@ body {
 }
 
 /* FORM DE LOGIN E CADASTRO */
+
 #form-container {
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: .5px 10px 15px rgba(78, 76, 76, 0.2);
     margin: 25px auto;
     padding: 25px;

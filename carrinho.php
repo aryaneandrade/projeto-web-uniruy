@@ -52,8 +52,8 @@ include_once("templates/header.php");
     </div>
 
     <div class="text-end">
-        <a href="catalogo.php" class="btn btn-secondary"> Continuar comprando </a>
-        <a href="compra.php" class="btn btn-success"> Finalizar Compra </a>
+        <a href="produtos.php" class="btn btn-secondary"> Continuar comprando </a>
+        <a href="endereco.php" class="btn btn-success"> Finalizar Compra </a>
     </div>
 </div>
 </body>
