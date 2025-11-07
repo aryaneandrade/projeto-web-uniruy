@@ -43,21 +43,20 @@ projeto-web-uniruy/
 │   ├── js/       # Scripts JavaScript
 │   └── img/      # Imagens do site
 │
-├── controller/   # Controladores
-│   └── *.php     # Arquivos que recebem requisições e chamam Model/DAO
-│
-├── model/        # Modelos / Lógica de negócio
-│   └── *.php     # Classes que representam entidades e regras de negócio
-│
-├── persistence/  # Persistência / Acesso ao banco de dados
-│   └── *.php     # Classes DAO, consultas SQL e conexão com banco
-│
-├── views/        # Páginas do usuário (front-end)
-│   └── *.php     # HTML + PHP para exibição de dados
-│
 └── docs/         # Documentação do projeto
-    ├── diagramas/         # Diagramas UML, fluxogramas
-    └── requisitos/       # Requisitos, casos de uso, manuais
+|   ├── diagramas/         # Diagramas UML, fluxogramas
+|   └── data/ # Base para criar o Banco de dados 
+│
+├── helpers/        # Cria Links absolutos para imagems, estilos 
+│   └── url.php     # Define a variável BASE_URL com o endereço base do sistema
+│
+├── templates/        # templates para reuso do navbar e footer (evitando duplicação de código)
+│   └── header.php    
+│   └── footer.php
+├── php/        # conexão com banco e processamento dos formularios
+│   └── conexao.php   
+│   └── router.php 
+     
 ```
 
 ---
