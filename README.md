@@ -85,8 +85,9 @@ O diagrama abaixo representa as principais interações do sistema:
 
 
 ---
-## 📊 Diagrama de ER
+## 📊 Diagrama de Entidade-Relacionamento (Banco de Dados)
 
+![Diagrama de Casos de Uso](./docs/diagramas/diagrama-entidade-relacionamento.png)
 
 ---
 ## 🚀 Funcionalidades Principais
