@@ -133,7 +133,7 @@ body {
     white-space: nowrap;
     right: 0;
     left: 0;
-    animation: animacao 8s linear infinite;
+    animation: animacao 12s linear infinite;
     color: #101010;
     position: absolute;
 }

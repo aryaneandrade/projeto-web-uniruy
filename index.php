@@ -29,7 +29,7 @@ include_once("templates/header.php");
 <!--ANIMAÇÃO BLACK FRIDAY -->
 <div class="overflow-hidden text-white py-2" id="animacao-bg">
     <div class="animacao">
-        <h1 class="m-0">BLACK FRIDAY NO AR — OFERTAS IMPERDÍVEIS NA BYTE SHOP!</h1>
+        <h1 class="m-0">BLACK FRIDAY NO AR — OFERTAS IMPERDÍVEIS NA BYTE SHOP COM FRETE GRATIS PARA TODO O BRASIL!</h1>
     </div>
 </div>
 
@@ -93,6 +93,7 @@ include_once("templates/header.php");
         </div>
     </div>
 </div>
+
 <?php
 include_once("templates/footer.php");
 ?>

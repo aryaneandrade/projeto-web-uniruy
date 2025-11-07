@@ -28,7 +28,7 @@
     <!--NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">ByteShop</a>
+            <a class="navbar-brand" href="index.php">ByteShop</a>
             <div class="navbar-items">
                 <div></div>
                 <form class="d-flex" role="search" id="search-form">
@@ -53,3 +53,4 @@
             </div>
         </div>
     </nav>
+    

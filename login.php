@@ -2,19 +2,6 @@
 include_once("templates/header.php");
 ?>
 
-<!-- BOTTOM NAVBAR para voltar para home -->
-<nav class="navbar navbar-expand-lg light-bg-color" id="bottom-navbar-container">
-    <div class="container">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
 <div class="container col-11 col-md-9" id="form-container">
     <div class="row align-items-center gx-5">
         <div class="col-md-12 order-md-1">
