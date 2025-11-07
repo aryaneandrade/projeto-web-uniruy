@@ -138,21 +138,6 @@ CREATE TABLE IF NOT EXISTS `enderecos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------
--- Consulta exemplo: produtos em promoção Black Friday ativos hoje
--- --------------------------------------------------
--- (corrigida sintaxe e condição IS NOT NULL)
--- SELECT p.nome AS produto, c.nome AS categoria, pr.preco_normal, pr.preco_black_friday
--- FROM produtos p
--- JOIN categorias c ON p.id_categoria = c.id_categorias
--- JOIN precos pr ON p.id_produto = pr.id_produto
--- WHERE pr.preco_black_friday IS NOT NULL
---   AND CURDATE() BETWEEN pr.data_inicio_promocao AND pr.data_fim_promocao;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
--- --------------------------------------------------
 -- Tabela mínima de endereços (compatível com `endereco.php`)
 -- Campos mantêm apenas os dados usados na página de entrega:
 -- cep, rua (logradouro), numero, telefone, bairro, cidade, estado
@@ -172,6 +157,3 @@ CREATE TABLE IF NOT EXISTS enderecos (
     FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
 
--- Exemplo de uso: inserir um endereço para um usuário existente (ajuste o user_id)
--- INSERT INTO enderecos (user_id, cep, logradouro, numero, telefone, bairro, cidade, estado)
--- VALUES (1, '12345-678', 'Rua Exemplo', '151', '71 90000-0000', 'Centro', 'Salvador', 'BA');
