@@ -3,10 +3,6 @@
 -- Preserva os nomes e dados do arquivo original, mas com sintaxe válida,
 -- engine/charset consistentes e pequenas melhorias (comentários, checagens)
 -- --------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 SET NAMES utf8mb4;
 
 CREATE DATABASE IF NOT EXISTS `black_friday` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
