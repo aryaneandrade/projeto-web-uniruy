@@ -26,8 +26,8 @@ include_once("templates/header.php");
 
                 <div class="form-group col-md-3">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone"
-                        pattern="^[0-9]{2}\s[0-9]{4,5}-[0-9]{4}$" placeholder="Ex: 71 90000-0000">
+                    <input type="tel" class="form-control" id="telefone" pattern="^[0-9]{2}\s[0-9]{4,5}-[0-9]{4}$"
+                        placeholder="Ex: 71 90000-0000">
                 </div>
 
                 <div class="form-group col-md-4 mt-3">
@@ -85,4 +85,5 @@ include_once("templates/header.php");
     </script>
 
 </body>
+
 </html>

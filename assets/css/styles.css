@@ -1,4 +1,5 @@
 /* ESTILOS GERAIS */
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -72,21 +73,6 @@ body {
     text-align: center;
 }
 
-.navbar-items {
-    justify-content: space-between;
-}
-
-/* BOTTOM NAVBAR */
-#bottom-navbar-container .container {
-    justify-content: flex-end;
-
-}
-#bottom-navbar-container a {
-    font-weight: 600;
-}
-
-
-
 #cart-item span {
     left: 20px;
 }
@@ -98,11 +84,48 @@ body {
     text-align: center;
 }
 
+/* Adaptando a logo */
+@media(min-width:768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+.navbar-items {
+    justify-content: space-between;
+}
+
+/* ADAPTANDO OS ITENS */
+@media(min-width:768px) {
+    .navbar-items {
+        min-width: 80%;
+        display: flex;
+    }
+}
 
 #search-form {
     width: 100%;
     margin: 2em 0;
 }
+
+@media(min-width:768px) {
+    #search-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* BOTTOM NAVBAR */
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+
+}
+
+#bottom-navbar-container a {
+    font-weight: 600;
+}
+
 
 /* ANIMAÇÃO BLACK FRIDAY*/
 .animacao {
@@ -110,7 +133,7 @@ body {
     white-space: nowrap;
     right: 0;
     left: 0;
-    animation: animacao 12s linear infinite;
+    animation: animacao 8s linear infinite;
     color: #101010;
     position: absolute;
 }
@@ -134,7 +157,6 @@ body {
         transform: translateX(-100%);
     }
 }
-
 /* CATEGORIAS */
 #categorias {
   background-color: #626262;
@@ -190,14 +212,25 @@ body {
   color: #626262;
 }
 
+@media (min-width: 768px) {
+  #categorias .col-12 {
+    max-width: 30%;
+  }
+}
 
 /* FORM DE LOGIN E CADASTRO */
 #form-container {
     background-color: #FFF;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: .5px 10px 15px rgba(78, 76, 76, 0.2);
     margin: 25px auto;
     padding: 25px;
     color: #000;
 }
 
+@media(min-width: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
