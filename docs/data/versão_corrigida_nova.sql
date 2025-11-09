@@ -4,7 +4,6 @@ USE black_friday;
 
 -- Removendo tabelas se existirem para evitar conflitos
 DROP TABLE IF EXISTS enderecos;
-DROP TABLE IF EXISTS detalhes_produtos;
 DROP TABLE IF EXISTS precos;
 DROP TABLE IF EXISTS produtos;
 DROP TABLE IF EXISTS categorias;
@@ -42,15 +41,6 @@ CREATE TABLE precos (
     data_fim_promocao DATE,
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
-
-CREATE TABLE detalhes_produtos (
-    id_detalhe INT PRIMARY KEY AUTO_INCREMENT,
-    id_produto INT,
-    chave_detalhe VARCHAR(50),
-    valor_detalhe VARCHAR(100),
-    FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
-);
-
 CREATE TABLE enderecos (
     id_endereco INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -118,14 +108,3 @@ INSERT INTO precos (id_produto, preco_normal, preco_black_friday, data_inicio_pr
     (7, 2100.00, 1800.00, '2025-11-01', '2025-11-28'),
     (8, 9000.00, 7500.00, '2025-11-01', '2025-11-28'),
     (9, 2900.00, 2500.00, '2025-11-01', '2025-11-28');
-
-INSERT INTO detalhes_produtos (id_produto, chave_detalhe, valor_detalhe) VALUES
-    (7, 'RAM', '8GB'),
-    (7, 'Armazenamento', '256GB'),
-    (7, 'Conectividade', '5G'),
-    (8, 'RAM', '12GB'),
-    (8, 'Armazenamento', '512GB'),
-    (8, 'Conectividade', '5G'),
-    (9, 'RAM', '12GB'),
-    (9, 'Armazenamento', '512GB'),
-    (9, 'Conectividade', '5G');

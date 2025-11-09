@@ -93,14 +93,14 @@ try {
         <?php else: ?>
             <?php foreach ($produtos as $produto): ?>
                 <div class="col-md-3 mb-4">
-                    <div class="card h-100 dark-bg-color">
+                    <div class="card h-100 light-bg-color">
                         <!-- Imagem do Produto -->
                         <img src="<?php echo htmlspecialchars($produto['imagem_url']); ?>"
                              class="card-img-top"
                              alt="<?php echo htmlspecialchars($produto['nome']); ?>"
                              style="height: 220px; object-fit: contain; padding: 10px;">
                         
-                        <div class="card-body d-flex flex-column text-white">
+                        <div class="card-body d-flex flex-column text-black">
                             <!-- Nome e Descrição -->
                             <h5 class="card-title"><?php echo htmlspecialchars($produto['nome']); ?></h5>
                             <p class="card-text flex-grow-1">
