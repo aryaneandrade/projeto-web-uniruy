@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte da disciplina **Desenvolvimento Web**, 
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 O propósito do projeto é consolidar o conhecimento adquirido em **HTML**, **CSS**, **JavaScript**, **PHP** e **MySQL**, promovendo a integração entre:
 
@@ -20,7 +20,7 @@ Além disso, o projeto inclui:
 
 ---
 
-## 🖥️ Sobre o Site
+## Sobre o Site
 
 O site, denominado **ByteShop**, é uma loja virtual especializada em produtos de tecnologia.  
 As principais categorias de produtos são:
@@ -33,7 +33,7 @@ Durante o período da **Black Friday**, o site apresenta promoções exclusivas,
 
 ---
 
-## 🗂️ Estrutura de Pastas do Projeto `projeto-web-uniruy`
+## Estrutura de Pastas do Projeto `projeto-web-uniruy`
 
 ```
 projeto-web-uniruy/
@@ -61,7 +61,7 @@ projeto-web-uniruy/
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Camada         | Tecnologias             |
 | :------------- | :-------------------- |
@@ -73,23 +73,23 @@ projeto-web-uniruy/
 
 ---
 
-## 📊 Diagrama de Casos de Uso
+## Diagrama de Casos de Uso
 
 O diagrama abaixo representa as principais interações do sistema:
 
-![Diagrama de Casos de Uso](./docs/diagramas/diagrama-caso-de-uso.png)
+![Diagrama de Casos de Uso](./assets/diagramas/diagrama-casos-de-uso.png)
 
 ---
-## 📊 Diagrama de Classes
+## Diagrama de Classes
 
-
-
----
-## 📊 Diagrama de ER
 
 
 ---
-## 🚀 Funcionalidades Principais
+## Diagrama de ER
+
+
+---
+## Funcionalidades Principais
 
 - Cadastro e login de usuários
 - Navegação por categorias e produtos
@@ -101,7 +101,7 @@ O diagrama abaixo representa as principais interações do sistema:
 
 ---
 
-## 📌 Observações
+## Observações
 
 - Seguindo boas práticas de organização, toda a lógica de negócio está separada do front-end e do acesso ao banco de dados.  
 - Os arquivos estáticos (CSS, JS, imagens) ficam na pasta `assets/`.  
