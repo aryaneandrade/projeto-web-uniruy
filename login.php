@@ -11,12 +11,12 @@ include_once("templates/header.php");
                 <input type="hidden" name="acao" value="login">
 
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
                     <label for="email" class="form-label">Digite seu email</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="password" class="form-control" id="password" name="password"
-                        placeholder="Digite sua senha">
+                        placeholder="Digite sua senha" required>
                     <label for="password" class="form-label">Digite sua senha</label>
                 </div>
                 <input type="submit" class="btn btn-secondary" value="Entrar">
